@@ -1,4 +1,7 @@
-const numbers = [1, 2, 3, 4, 5];
+const interval = setInterval(() => {
+  console.log("prints every 2 seconds");
+}, 2000);
 
-const squares = numbers.map((number) => number * number);
-console.log("squares: ", squares);
+setTimeout(() => {
+  clearInterval(interval);
+}, 10000);
